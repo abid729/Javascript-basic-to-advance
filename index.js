@@ -2,16 +2,16 @@
 // console.log('test');
 
  // ***************** Secion 2 Variable and its values *****************
-let myName = "Muhammad Abid";
+let myName = "Muhammad ";
 var _a = "Test";
 // var 1a = "Test"; 
 var $test = "Test"; 
-var abid__test = "Test"; 
+var __test = "Test"; 
 // console.log($test);
 
 
 //  ***************** Section 3 Data Types *****************
-var myFullName = "Muhammad Abid Ali";
+var myFullName = "Muhammad  Ali";
 var sign = '+';
 // console.log('Type Of Use to check type of a variable', typeof(sign));
 var ex1 = 10 + "30"; 
@@ -77,7 +77,7 @@ var num2 = '5';
 // console.log(num1===num2);
 
 
-//  ***************** Section 8 Conditional Operator in JS *****************
+//  ***************** Section 7 Conditional Operator in JS *****************
 
 
 // var year = 2020;
@@ -171,16 +171,62 @@ do{
 while(n <= 5);
 
 for(n = 1; n<=10; n++){
-   console.log(8+' * '+ n +' = '+ n*8);
+//    console.log(8+' * '+ n +' = '+ n*8);
 }
 
-//  ***************** Section 9 Function in JS *****************
+//  ***************** Section 8 Function in JS *****************
 
 
-function sums(a,b){
+function sums(a,b){ // parameters in a function
     var tot = a+b;
-    console.log(tot);
+    // console.log(tot);
 }
 
-var test = sums(10,12);
+var test = sums(10,12); // arguments in a function
 test;
+
+
+ function defaultParams(a,b=0,c= 10){ // default parameter
+        return  res = a+b-c;
+ }
+// console.log(defaultParams(20,30,9))
+
+
+// How to convert it into Fat arrow functions
+const sumFatArrow = () =>{
+    var a = 5, b= 10;
+    return a+b;
+}
+// console.log(sumFatArrow())
+
+//  ***************** Section 9  Arrays in JS *****************
+var myFirstArray = ['a1','a$2', 'a3'];
+// console.log(myFirstArray[myFirstArray.length-1]);
+// console.log(myFirstArray.length);
+if(myFirstArray.includes('a$2') == true){
+// console.log('HURRAH');
+}
+else{
+// console.log('opps');
+}
+for (let n = 0; n < myFirstArray.length; n++) {
+    const element = myFirstArray[n];
+    // console.log(element);
+}
+
+// For in loop
+for (const elements in myFirstArray) {
+    // console.log(elements);
+}
+
+// For of loop
+
+for (const elements of myFirstArray) {
+    // console.log(elements);
+}
+
+// foreach loop
+
+myFirstArray.forEach(function(element,index,array) {
+    // console.log(array);
+});
