@@ -62,11 +62,11 @@ var sum  = 10 + 5;
 
 // console.log(3**3);
 // console.log(3+"3");
-// var a= 3;
-// var b = 4;
-// a= a+b;
-// b= a-b;
-// a= a-b;
+var a= 3;
+var b = 4;
+a= a+b;
+b= a-b;
+a= a-b;
 // console.log(a,b);
 
 var num1 = 5;
@@ -75,6 +75,11 @@ var num2 = '5';
 // console.log(typeof(num2));
 // console.log(num1==num2);
 // console.log(num1===num2);
+
+
+//  ***************** Section 8 Conditional Operator in JS *****************
+
+
 // var year = 2020;
 // if(year % 4 == 0)
 // {
@@ -100,11 +105,82 @@ var num2 = '5';
 // }
 
 
-if(score = 0){
-    console.log('OMG! You loss the Match')
+// if(score = 0){
+//     console.log('OMG! You loss the Match')
+// }
+// else{
+//     console.log('Yeah! You won the Match')
+// }
+
+
+area = 'Rectangle';
+r = 3;
+var finalArea = 0;
+var Π = 3.14;
+if(area == 'circle'){
+    // Area = Π * r * r;
+    finalArea = Π * r * r;
+    // console.log('Area of Circle is: '+finalArea)
+}
+else if(area == 'Triangle'){
+    // finalArea = (0.5)*height*base;
+    finalArea = (.5)*10*10;
+    // console.log('Area of Triangle is: '+finalArea)
+}
+else if(area == 'Rectangle'){
+    // Area = width + length;
+    finalArea = 10*10;
+    // console.log('Area of Rectangle is: '+finalArea)
 }
 else{
-    console.log('Yeah! You won the Match')
+    // console.log('Please Enter Correct Area')
 }
 
-//  ***************** Section 7 Arthimetic Operator in JS *****************
+
+switch(area){
+    case 'circle':
+        finalArea = Π * r * r;
+        // console.log('Area of Circle is: '+finalArea);
+        break;
+
+    case 'Triangle':
+        finalArea = (.5)*10*10;
+        // console.log('Area of Triangle is: '+finalArea);
+        break;
+
+    case 'Rectangle':
+        finalArea = 10*10;
+        // console.log('Area of Rectangle is: '+finalArea);
+        break;
+
+    default:
+        // console.log('Please Enter Correct Area')
+    
+}
+
+var num = 0;
+while(num <= 5){
+// console.log(num);
+num++;
+}
+var n = 0;
+do{
+//    console.log(n);
+   n++; 
+}
+while(n <= 5);
+
+for(n = 1; n<=10; n++){
+   console.log(8+' * '+ n +' = '+ n*8);
+}
+
+//  ***************** Section 9 Function in JS *****************
+
+
+function sums(a,b){
+    var tot = a+b;
+    console.log(tot);
+}
+
+var test = sums(10,12);
+test;
