@@ -230,3 +230,51 @@ for (const elements of myFirstArray) {
 myFirstArray.forEach(function(element,index,array) {
     // console.log(array);
 });
+
+// push
+
+myFirstArray.push('test')
+
+// unshift
+
+myFirstArray.unshift('test')
+
+// shift 
+
+myFirstArray.shift('test')
+
+// pop 
+
+myFirstArray.pop('test')
+
+// console.log(myFirstArray);
+
+
+var month = ['jan','feb','march'];
+// console.log(month);
+// sol 1:
+const checkIndex = month.indexOf('feb');
+let newArray = [];
+if(checkIndex != -1){
+     newArray = month.splice(1,1,"Feb");
+}
+// console.log(month);
+
+// sol2:
+firstArr_res = [];
+let firstArr = [25,36,49,64,81]
+for (const iterator of firstArr) {
+    // console.log(Math.sqrt(iterator))
+    firstArr_res.push(Math.sqrt(iterator));
+}
+// console.log(firstArr_res);
+let secondArr = [2,4,6,8]
+
+for (const iterator of secondArr) {
+    const resiterate = iterator*2;
+    // console.log(resiterate);
+    if(resiterate > 10){
+        console.log(resiterate);
+    }
+}
+
