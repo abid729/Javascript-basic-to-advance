@@ -274,7 +274,30 @@ for (const iterator of secondArr) {
     const resiterate = iterator*2;
     // console.log(resiterate);
     if(resiterate > 10){
-        console.log(resiterate);
+        // console.log(resiterate);
     }
+    
 }
+
+// map method 
+let newArr = [2,4,6,8]
+// filter method 
+let arr2 = newArr.map((curElem)=> {
+//  console.log(curElem);
+return curElem*2;
+}).filter((curElm) => {
+    // console.log(curElm);
+    return curElm > 10; 
+});
+let sume = [1,2,4,5,6,8];
+
+let arrSum = sume.reduce((accumulator,curElem,index,arr) => {
+return accumulator += curElem;
+});
+console.log(arrSum)
+
+// console.log(arr2);
+// reduce method 
+
+
 
