@@ -289,15 +289,28 @@ return curElem*2;
     // console.log(curElm);
     return curElm > 10; 
 });
+// reduce method 
 let sume = [1,2,4,5,6,8];
-
 let arrSum = sume.reduce((accumulator,curElem,index,arr) => {
+    // debugger;
 return accumulator += curElem;
 });
-console.log(arrSum)
+// console.log(arrSum)
 
 // console.log(arr2);
-// reduce method 
+
+let newA = [
+['abid','ali'],
+['abid','ali'],
+['abid',['abid','ali']]
+];
+let re = newA.reduce((acc,curEl) => {
+    // console.log(newA.concat(curEl));
+});
 
 
 
+//  ***************** Section 10  Strings in JS *****************
+var name = "Muhammad \"test\" Abid";
+var strname  = new String(name);
+console.log(name)
